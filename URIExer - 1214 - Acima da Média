@@ -1,0 +1,28 @@
+#include <stdio.h>
+ #include <stdlib.h>
+ 
+int main(){
+int c,n,x;
+float soma,y;
+scanf("%d",&c);
+while(c > 0){
+scanf("%d",&n);
+soma = 0;
+y = 0;
+int num[n];
+//Armazenar valores;
+ 
+    for(x = 0; x < n; x++){
+    scanf("%d",&num[x]);
+    soma+=num[x];
+    }
+        soma /= n;
+        for(x = 0; x < n; x++){
+            if(num[x] > soma) y++;
+        }
+//Condição para executar o cálculo oposto escolhido;
+        printf("%.3f%c\n",y/n*100.000,'%');
+        c--;
+    }
+return 0;
+}
