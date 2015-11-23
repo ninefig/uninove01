@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+ 
+main(){
+    int m,n,x, cont, soma=0;
+    scanf("%d%d ", &m,&n);
+//Armazenar valores;
+    while((m>0) && (n>0)){
+//Condição para os números seguirem em ordem crescente;         
+      if (n<m){
+        x=m;
+        m=n;
+        n=x;
+    }
+//Mostrar e somar valores;
+    for(cont=m; cont<=n; cont++){
+        printf("%d ", cont);
+        soma+=cont;
+    }
+    printf("Sum=%d\n", soma);
+    soma=0;
+    scanf("%d%d ", &m,&n);
+//Mostrar os resultados;
+}
+return 0;
+}
