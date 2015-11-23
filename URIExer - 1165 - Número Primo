@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+ 
+int main(){
+int a,b,x,root,n,count=0;
+//Armazenar valores;
+ 
+while(scanf("%d",&x)==1){
+    for(a=1; a<=x; a++){
+    scanf("%d",&n);
+//Condição para executar o cálculo escolhido;
+        if(n==1 || n==0)
+        printf("%d nao eh primo\n",n);
+            else {
+            count=0;
+                root=sqrt(n);
+                    for(b=2; b<=root; b++){
+                        if(n%b==0){
+                        count=1;
+                        break;
+                        }
+                    }
+                            if(count==1)
+                            printf("%d nao eh primo\n",n);
+                              else
+                              printf("%d eh primo\n",n);
+                              count=0;
+//Comandos para as operações opostas serem executadas.
+                        }
+                  }
+      }
+}
