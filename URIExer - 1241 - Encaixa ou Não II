@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+ 
+int main(){
+int n, a, b, c, x;
+ 
+char n1[1001], n2[1001];
+scanf("%d",&n);
+//Armazenar valores;
+ 
+for(a = 0; a < n; a++){
+x = 0;
+scanf("%s%s",&n1,&n2);
+//Condição para executar o cálculo escolhido;
+ 
+    for(b = strlen(n2), c = strlen(n1) ; b >= 0; b--, c--){
+        if(n1[c] == n2[b]) x++;
+            else break;
+            }
+            if(x == strlen(n2)+1) printf("encaixa\n");
+            else printf("nao encaixa\n");
+//Comandos para as operações opostas serem executadas.     
+             }
+return 0;
+}
