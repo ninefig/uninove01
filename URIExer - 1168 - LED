@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+ 
+int main()
+{
+    char led[1110];
+    int n,soma=0,a,b;
+    scanf("%d", &n);
+//Armazenar valores;
+        for(a=0 ; a < n ; a++){
+            scanf("%s", led);
+                for( b=0 ; b < strlen(led) ; b++){
+//Condição para executar o cálculo escolhido;
+        if(led[b] == '1'){
+            soma+=2;
+        }
+        else if(led[b] == '2'){
+            soma+=5;
+        }
+        else if(led[b] == '3'){
+            soma+=5;
+        }
+        else if(led[b] == '4'){
+            soma+=4;
+        }
+        else if(led[b] == '5'){
+            soma+=5;
+        }
+        else if(led[b] == '6'){
+            soma+=6;
+        }
+        else if(led[b]== '7'){
+            soma+=3;
+        }
+        else if(led[b] == '8'){
+            soma+=7;
+        }
+        else if(led[b] == '9'){
+            soma+=6;
+        }
+        else if(led[b] == '0'){
+            soma+=6;
+        }
+                }
+        printf("%d leds\n",soma);
+            soma = 0;
+        }
+//Comandos para as operações opostas serem executadas.
+    return 0;
+}
