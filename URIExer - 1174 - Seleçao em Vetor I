@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main(){
+int A;
+float X;
+// Armazenar valores;
+ 
+for(A = 0; A < 100; A++){
+scanf("%f",&X);
+    if(X <= 10)
+    printf("A[%d] = %.1f\n",A, X);
+    }
+//Condição para executar o cálculo escolhido;
+  
+return 0;
+}
