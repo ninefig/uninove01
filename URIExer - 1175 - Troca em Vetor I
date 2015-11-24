@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main(){
+int N[20];
+int x, a, b, y;
+x = 0;
+//Armazenar valores;
+    while(x<20){
+    scanf("%d", &N[x]);
+    x++;
+    }
+ 
+    x = 0;
+ 
+//Inverter os valores;
+    for (a = 19; a >= 10; a--){
+    y = N[a];
+    N[a] = N[x];
+    N[x] = y;
+    x++;
+    }
+ 
+//Mostrar os resultados;
+    for(b = 0; b < 20; b++){
+    printf("N[%d] = %d\n", b, N[b]);
+    }
+ 
+return 0;
+ 
+}
