@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+  
+int main(){
+  
+int a,b,x,y;
+char cod[50];
+//Armazenar valores;
+  
+scanf("%d",&a);
+for(x=0; x<a; x++){
+scanf("%s",&cod);
+scanf("%d",&b);
+//Condição para executar o cálculo escolhido;
+             
+for(y=0; y<50; y++){
+    if(cod[y] == '\0') break;
+            if((cod[y] - b) < 65) printf("%c", (cod[y] - b)+ 26);
+                    else printf("%c", (cod[y] - b));
+//Comandos para as operações opostas serem executadas.
+            }
+    printf("\n");        
+    }
+return 0;
+}
